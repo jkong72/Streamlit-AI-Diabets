@@ -6,8 +6,8 @@ import joblib
 
 def run_ml_app():
     df = pd.read_csv('Data/diabetes.csv')
-    classifier = joblib.load('data/best_model.pkl')
-    scaler_X = joblib.load('data/scaler_X.pkl')
+    classifier = joblib.load('Data/best_model.pkl')
+    scaler_X = joblib.load('Data/scaler_X.pkl')
     
     st.subheader ('인공지능 예측')
     st.write ('입력한 데이터를 바탕으로, 당뇨병 여부를 예측할 수 있습니다.')
